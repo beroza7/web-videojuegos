@@ -1,0 +1,195 @@
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+
+
+html {
+  font-size: 10pt;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 
+  'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: #eee;
+}
+section {
+  height: 100vh;
+  background-image: url(../img/imagen-inicio.jpeg);
+  background-size: cover;
+}
+section span {
+  margin: 0;
+  font-size: 400%;
+  text-align: center;
+  line-height: 1;
+  padding-top: calc(50vh - 20pt);
+  display: block;
+  font-weight: 700;
+
+}
+
+.center{
+
+  text-align:center;
+}  
+
+
+header {
+  width: 100%;
+  padding: 1em;
+  font-size: 140%;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  transition: opacity .2s ease-in-out;
+  text-align: center;
+}
+header h1 {
+  font-weight: 600;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+nav a {
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  opacity: .7;
+  padding: 0 .5em;
+  color: black;
+  transition: opacity .2s ease-in-out;
+}
+nav a:hover,
+nav a:focus {
+  opacity: 1;
+}
+article {
+  margin: 5em auto 0;
+  padding: 1em;
+  font-size: 140%;
+  max-width: 800px;
+  background: white;
+  box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+}
+article p {
+  margin: 0;
+  color: #333;
+}
+article p + p {
+  margin-top: .7em;
+}
+
+table{
+  background-color: #eee;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td{
+  padding: 20px;
+}
+
+thead{
+  background-color: #333;
+  border-bottom: solid 5px #996633;
+  color:white;
+}
+
+tr:nth-child(even){
+  background-color: white;
+  
+}
+
+tr:hover{
+  background-color: #996633;
+}
+
+.button {
+  background-color: #333; 
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-critica {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #996633;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.button-critica:hover {
+  background-color: #333;
+  color: white;
+}
+
+.button-container {
+  text-align: center;
+  font-size:30px;
+}
+
+
+/*para estilizar la lista de puntuación*/
+.custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.custom-counter li {
+  counter-increment: step-counter;
+  margin-bottom: 10px;
+}
+
+.custom-counter li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: #996633;
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+
+
+/*para hacer la página responsive (adaptable a tablets, moviles...) uso de media queries*/
+@media (min-width: 500px) {
+  header {
+    text-align: left;
+  }
+  nav {
+    float: right;
+  }
+  article {
+    margin: 3.5em auto 0;
+    padding: 2em;
+  }
+}
+@media (min-width: 800px) {
+  article {
+    margin: 3.5em auto;
+  }
+}
+
