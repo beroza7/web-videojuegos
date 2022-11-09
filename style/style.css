@@ -172,7 +172,9 @@ tr:hover{
   border-radius: 3px;
 }
 
-
+#estilo-lista-pc{
+  list-style-type: circle;
+}
 
 /*para hacer la página responsive (adaptable a tablets, moviles...) uso de media queries*/
 @media (min-width: 500px) {
