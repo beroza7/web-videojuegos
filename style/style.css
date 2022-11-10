@@ -199,7 +199,9 @@ h1 {
   color: white;
   text-align: center;
 }
-
+#estilo-lista-pc{
+  list-style-type: circle;
+}
 .position-list{
   position:relative;
   left:10px;
