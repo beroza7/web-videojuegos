@@ -44,7 +44,6 @@ section span {
   text-align:center;
 }  
 
-
 header {
   width: 100%;
   padding: 1em;
@@ -61,6 +60,7 @@ header h1 {
   margin: 0;
   padding: 0;
   font-size: inherit;
+
 }
 nav a {
   display: inline-block;
@@ -108,6 +108,8 @@ thead{
   color:white;
 }
 
+
+
 tr:nth-child(even){
   background-color: white;
   
@@ -129,24 +131,33 @@ tr:hover{
   cursor: pointer;
 }
 
-.button-critica {
+#button-critica {
   background-color: white; 
   color: black; 
   border: 2px solid #996633;
   font-size: 20px;
   border-radius: 5px;
   padding: 5px;
+  text-align: center;
 }
 
-.button-critica:hover {
+#button-critica:hover {
   background-color: #333;
   color: white;
 }
 
-.button-container {
+
+#button-container {
   text-align: center;
   font-size:30px;
+  background-color: white; 
+  color: black; 
+ 
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
 }
+
 
 
 /*para estilizar la lista de puntuación*/
@@ -159,7 +170,10 @@ tr:hover{
 .custom-counter li {
   counter-increment: step-counter;
   margin-bottom: 10px;
+
+  
 }
+
 
 .custom-counter li::before {
   content: counter(step-counter);
@@ -172,7 +186,25 @@ tr:hover{
   border-radius: 3px;
 }
 
+h1 {
+  cursor: pointer;
+}
 
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2E2E2E;
+  color: white;
+  text-align: center;
+}
+
+.position-list{
+  position:relative;
+  left:10px;
+  top:5px;
+}
 
 /*para hacer la página responsive (adaptable a tablets, moviles...) uso de media queries*/
 @media (min-width: 500px) {
